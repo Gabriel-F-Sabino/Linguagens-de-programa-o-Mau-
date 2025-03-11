@@ -1,6 +1,6 @@
 //Feito
 import java.util.Scanner;
-public class Ex6 {
+public class Ex06 {
     public static void main(String[] args) {
         float ValorInicial = 0;
         float ValorFinal = 0;

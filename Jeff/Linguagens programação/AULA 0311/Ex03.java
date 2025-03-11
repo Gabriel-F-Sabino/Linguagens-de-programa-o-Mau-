@@ -1,6 +1,6 @@
 //Feito
 import java.util.Scanner;
-public class Ex3 {
+public class Ex03 {
     public static void main(String[] args) {
         float numero = 0;
         float quadrado = 2;

@@ -2,7 +2,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class Ex5 {
+public class Ex05 {
     public static void lerTexto(String nomeArquivo) {
         try {
             File arquivo = new File(nomeArquivo);

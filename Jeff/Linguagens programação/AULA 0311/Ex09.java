@@ -1,6 +1,6 @@
 //Feito
 import java.util.Scanner;
-public class Ex9 {
+public class Ex09 {
     public static void main(String[] args) {
         int numero = 0;
         Scanner sc = new Scanner(System.in);

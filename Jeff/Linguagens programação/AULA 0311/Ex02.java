@@ -1,6 +1,6 @@
 //Feito
 import java.util.Scanner;
-public class Ex2 {
+public class Ex02 {
     public static void main(String[] args) {
         float base = 0;
         float altura = 0;
