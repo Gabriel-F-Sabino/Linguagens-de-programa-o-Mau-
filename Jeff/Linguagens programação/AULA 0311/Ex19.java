@@ -1,15 +1,16 @@
+//Feito
 import java.util.Scanner;
 public class Ex19 {
     public static void main(String[] args) {
-        float base = 0;
-        float altura = 0;
+        float diagonal_menor = 0;
+        float diagonal_maior = 0;
         Scanner sc = new Scanner(System.in);
-        System.out.print("Digite a altura do retângulo: ");
-        altura = sc.nextFloat();
-        System.out.print("Digite a base do retângulo: ");
-        base = sc.nextFloat();        
-        float area = base * altura;
-        System.out.println("A área do retângulo é " + area + " unidades de área.");
+        System.out.print("Digite o valor da diagonal menor: ");
+        diagonal_menor = sc.nextFloat();
+        System.out.print("Digite o valor da diagonal maior: ");
+        diagonal_maior = sc.nextFloat();        
+        float area = diagonal_maior * diagonal_menor / 2;
+        System.out.println("A área do losanglo é " + area + " unidades de área.");
         sc.close();
     }
 }

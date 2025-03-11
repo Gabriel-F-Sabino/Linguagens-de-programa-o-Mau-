@@ -1,15 +1,12 @@
+//Feito
 import java.util.Scanner;
 public class Ex9 {
     public static void main(String[] args) {
-        float base = 0;
-        float altura = 0;
+        int numero = 0;
         Scanner sc = new Scanner(System.in);
-        System.out.print("Digite a altura do retângulo: ");
-        altura = sc.nextFloat();
-        System.out.print("Digite a base do retângulo: ");
-        base = sc.nextFloat();        
-        float area = base * altura;
-        System.out.println("A área do retângulo é " + area + " unidades de área.");
+        System.out.print("Digite o número: ");
+        numero = sc.nextInt();
+        System.out.println("Seu logaritmo na base 10 é: " + Math.log10(numero));
         sc.close();
     }
 }

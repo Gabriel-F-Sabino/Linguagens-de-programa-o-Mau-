@@ -1,17 +1,27 @@
-import java.io.*;
-import java.util.*;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
 
 public class Ex5 {
+    public static void lerTexto(String nomeArquivo) {
+        try {
+            File arquivo = new File(nomeArquivo);
+            if (!arquivo.exists()) {
+                System.out.println("Arquivo não encontrado: " + nomeArquivo);
+                return;
+            }
+            Scanner sc = new Scanner(arquivo);
+            System.out.println("Arquivo encontrado: " + nomeArquivo);
+            while (sc.hasNext()) {
+                System.out.println(sc.nextLine());
+            }
+            sc.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
     public static void main(String[] args) {
-        float base = 0;
-        float altura = 0;
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Digite a altura do retângulo: ");
-        altura = sc.nextFloat();
-        System.out.print("Digite a base do retângulo: ");
-        base = sc.nextFloat();        
-        float area = base * altura;
-        System.out.println("A área do retângulo é " + area + " unidades de área.");
-        sc.close();
+        lerTexto("poema.txt");
     }
 }
